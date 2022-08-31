@@ -20,16 +20,22 @@ Entries that are currently crossed out we will get to later in the course that y
 - clone
  Clones a repository into a newly created directory, creates remote-tracking branches for each branch in the cloned repository (visible using git branch -r), and creates and checks out an initial branch that is forked from the cloned repository's currently active branch.
 git clone https://github.com/<user name>/<repository name>
+  
+  
 - add
   updates the index using the current content found in the working tree, to
   prepare the content staged for the next commit. It typically adds the current content of
   existing paths as a whole
   git add project0.txt
+  
+  
 - rm
    Remove files from the index, or from the working tree and the index. git rm will not
    remove a file from just your working directory.  When --cached is given, the staged content has to match either the tip
    of the branch or the file on disk, allowing the file to be removed from just the index.
   git rv project0.txt
+  
+  
 - commit
   Stores the current contents of the index in a new commit along with a log message from the
   user describing the changes.
@@ -49,6 +55,8 @@ git push origin
   Fetches named heads or tags from one or more other repositories, along with the objects
   necessary to complete them.
   git fetch origin
+  
+  
 - merge
   Incorporates changes from the named commits (since the time their histories diverged from
   the current branch) into the current branch. This command is used by git pull to
@@ -80,31 +88,30 @@ git push origin
                $ git checkout hello.c            
 
 - ~~init~~
-  This command creates an empty Git repository - basically a .git directory with
-       subdirectories for objects, refs/heads, refs/tags, and template files. An initial HEAD
-       file that references the HEAD of the master branch is also created.
+  
 git init <directory>
 - ~~remote~~
- Manage the set of repositories ("remotes") whose branches you track.
-  git remote add -f -t master -m master origin git://example.com/git.git/
+ 
 ## git files & folders
 
-- .git folder
-- .gitignore file
+- .git folder- used for cloning and copying to your diretory, as shown in ls -lah
+  
+  
+- .gitignore file- specifies intentionally untracked files that Git should ignore. Files
+       already tracked by Git are not affected
+    cat .gitignore
+  
 - ~~.git/hooks~~
 
 ## GitHub
 
-- Pull requests
-- SSH authentication to repositories
+- Pull requests -  Create pull request for a project on GitHub via command line.
+Uses the email from git config user.email to open the pull request.
+git pull-request master
+  
+  
+- SSH authentication to repositories - creates two keys, one public, one private. Connects wsl to git hub.
+  
 - ~~Actions~~
 
-## Resources
 
-- [Pro Git Book](https://git-scm.com/book/en/v2)
-
-## Submission
-
-1. Commit and push your changes to your repository. Verify that these changes show in your course repository, https://github.com/WSU-kduncan/ceg3120-YOURGITHUBNAME
-
-2. In Pilot, paste the link to your project folder. Sample link: https://github.com/WSU-kduncan/ceg3120-YOURGITHUBUSERNAME/blob/main/Projects/Project0
