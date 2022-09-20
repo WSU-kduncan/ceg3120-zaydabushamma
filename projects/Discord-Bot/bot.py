@@ -1,4 +1,4 @@
-#Based on example https://discordpy.readthedocs.io/en/stable/quickstart.html
+
 
 import os
 
@@ -31,25 +31,17 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    brooklyn_99_quotes = [
-        'I\'m the human form of the 💯 emoji.',
-        'Bingpot!',
-        (
-            'Cool. Cool cool cool cool cool cool cool, '
-            'no doubt no doubt no doubt no doubt.'
-        ),
+   
+
+    Motivation_quotes = [
+        'The road to success and the road to failure are almost exactly the same.',
+        'Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to become the best of which you are capable.',
+        'I never dreamed about success. I worked for it.',
+        'You learn more from failure than from success. Don’t let it stop you. Failure builds character.',
     ]
 
-    hitchhiker_quotes = [
-        'There is an art, it says, or rather, a knack to flying. The knack lies in learning how to throw yourself at the ground and miss.',
-        'It is a mistake to think you can solve any major problems just with potatoes.',
-        'In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.',
-        'A common mistake that people make when trying to design something completely foolproof is to underestimate the ingenuity of complete fools.',
-    ]
-
-    if message.content == 'towel!':
-        #response = random.choice(brooklyn_99_quotes)
-        response = random.choice(hitchhiker_quotes)
+    if message.content == 'quotes!':
+        response = random.choice(Motivation_quotes)
         await message.channel.send(response)
 
 client.run(TOKEN)
