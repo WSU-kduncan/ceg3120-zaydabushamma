@@ -16,3 +16,4 @@ you will also have a variable called DISCORD_GUILD which you will store the name
  for now in the folder .env place the contents DISCORD_TOKEN="with your token".
  
  Part2- Usage
+To use: output the work quotes to display any of 5 motivational quotes
