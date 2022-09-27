@@ -27,5 +27,5 @@ part 3- Research
 After looking up more solutions one that may work is having a sceduled task on a pc or a computer such as a cron job but I do not know if it is still active when a pc is 
 turned off :( 
 the only possible solution for a system to be off would be a cloud system or virtual machine, if your someone that always has their computers on then that will also work.
-
+hello
 
