@@ -64,8 +64,11 @@ how to?
 
 
 1.click on security groups on the left hand corner scroll bar.
+
 2.click create security group button on top right.
+
 3.navigate to inbound rules and click on add rule
+
 4.click on SSH(port 22), choose my ip to refer to your computer, which should autofill your IP in ther next column.
 5.add rule, SSH, 130.108.0.0/24, so wright state can connect with ip addresses starting with 130.108
 6.add rule, SSh, addresses starting with 130.108, which what was our previous VPC we had built to allow all Instances within the VPC.
