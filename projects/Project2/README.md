@@ -1,6 +1,7 @@
 Part 1.1
 
 Create A VPC.
+
 how to-
 To create VPC, search VPC in search box and click create VPC, made sure to apply a 24-bit subnet, add name in key if not already set.
 
