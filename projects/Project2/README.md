@@ -148,6 +148,11 @@ How to-
 ![Screenshot 2022-10-03 2333382 1](https://user-images.githubusercontent.com/77698851/193730291-08bee5a0-c279-4835-8724-c173e9cbaecd.png)
 ![Screenshot 2022-10-03 2314002 1](https://user-images.githubusercontent.com/77698851/193730313-e9cb605d-fdbf-49b6-8dee-f528cca6ae48.png)
 
+Determine whether a Public IPv4 address will be auto-assigned to the instance. 
+
+I chose auto assign since we would be required to provide our own public IP, but I would have if I could or even better used a Private one
+for more security, Allowing all of wright state to access my VPC might not be the most secure.
+
 
 
 
