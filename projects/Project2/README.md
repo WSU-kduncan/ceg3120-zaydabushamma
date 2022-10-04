@@ -43,8 +43,11 @@ Create a route table
  how to - 
  
 1.click on route tables on the left scroll bar,choose create route table. choose associated VPC. 
+
 2. next, click on tabkle, and on the subnet associatio, explicit subnet asocciations, then choose the subnet that was previously attached to your VPC.
+ 
 3. Last, click on the route tab on your route table and click edit routes, set destination as 0.0.0.0/0 to send traffic to all destinations
+
 4. set target as internet gateway.
 
 what is a route table?
@@ -70,7 +73,9 @@ how to?
 3.navigate to inbound rules and click on add rule
 
 4.click on SSH(port 22), choose my ip to refer to your computer, which should autofill your IP in ther next column.
+
 5.add rule, SSH, 130.108.0.0/24, so wright state can connect with ip addresses starting with 130.108
+
 6.add rule, SSh, addresses starting with 130.108, which what was our previous VPC we had built to allow all Instances within the VPC.
 
 what is a security group?
@@ -79,6 +84,23 @@ Similar to firewall rules, allows for security and manages traffic and who comes
 
 
 ![Screenshot 2022-10-03 2240131 5](https://user-images.githubusercontent.com/77698851/193723114-de93da8f-151f-4367-bb24-c70d1ed45f3b.png)
+
+
+
+
+
+Part 2.
+
+
+
+creating new instance:
+
+How to- 
+
+
+
+![Screenshot 2022-10-03 23075722 1](https://user-images.githubusercontent.com/77698851/193727813-530ecfa7-2f07-4f57-88b1-63c87412067b.png)
+
 
 
 
