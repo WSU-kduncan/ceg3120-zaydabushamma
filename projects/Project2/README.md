@@ -97,9 +97,65 @@ creating new instance:
 
 How to- 
 
+1.Search EC2 on search bar
+
+2.Click running instances, then launch instance
+
+3.Name instance abushamma-instance
+
+4.selected an ami, I chose ami-0f1ee03d06c4c659c
+
+5.instance type was t2.micro
+
+6.go into network settings and attach your VPC
+
+7. kept the volume the at default which was 30gb for me.
+
+8. associate your security group abushamma.sg to the instance near where you attached the VPC(shown in picture)
+
+9.Next click launch
+
 
 
 ![Screenshot 2022-10-03 23075722 1](https://user-images.githubusercontent.com/77698851/193727813-530ecfa7-2f07-4f57-88b1-63c87412067b.png)
+
+
+Creating an elastic IP
+
+How to-
+
+1. click on elastic ip's on left scroll bar
+
+2. On the left click on Allocate Elastic IP address
+
+3.under "tags optional, add a tag and put Name in the key field
+
+4.then put the value as abushamma-EIP
+
+5. click allocate
+
+Associate instance to Elastic ip
+
+How to-
+
+1.go to the elastic ip tab again and click on the elastic ip you just created
+
+2.click on associate elastic ip adresses under action tab.
+
+3.choose the name of your instance and hit associate.
+
+![Screenshot 2022-10-03 2316032 1](https://user-images.githubusercontent.com/77698851/193730257-badb6bb1-0fed-4b8c-b511-ce9be2543772.png)
+![Screenshot 2022-10-03 2333382 1](https://user-images.githubusercontent.com/77698851/193730291-08bee5a0-c279-4835-8724-c173e9cbaecd.png)
+![Screenshot 2022-10-03 2314002 1](https://user-images.githubusercontent.com/77698851/193730313-e9cb605d-fdbf-49b6-8dee-f528cca6ae48.png)
+
+
+
+
+
+
+
+
+
 
 
 
