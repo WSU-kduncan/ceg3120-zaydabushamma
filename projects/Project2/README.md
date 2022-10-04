@@ -103,7 +103,7 @@ How to-
 
 3.Name instance abushamma-instance
 
-4.selected an ami, I chose ami-0f1ee03d06c4c659c
+4.selected an ami, I chose ami-0149b2da6ceec4bb0
 
 5.instance type was t2.micro
 
@@ -152,6 +152,15 @@ Determine whether a Public IPv4 address will be auto-assigned to the instance.
 
 I chose auto assign since we would be required to provide our own public IP, but I would have if I could or even better used a Private one
 for more security, Allowing all of wright state to access my VPC might not be the most secure.
+
+
+
+
+
+Used command  sudo hostnamectl set-hostname Abushamma.AMI
+required to logout for changes to take affect.
+
+![Screenshot 2022-10-04 002644_final](https://user-images.githubusercontent.com/77698851/193734274-cc592ec9-e8bf-4e2d-884a-26f49cd11269.png)
 
 
 
