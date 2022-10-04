@@ -40,9 +40,39 @@ different netowrks.
 part 1.4
 
 Create a route table
+ how to - 
+ 
+1.click on route tables on the left scroll bar,choose create route table. choose associated VPC. 
+2. next, click on tabkle, and on the subnet associatio, explicit subnet asocciations, then choose the subnet that was previously attached to your VPC.
+3. Last, click on the route tab on your route table and click edit routes, set destination as 0.0.0.0/0 to send traffic to all destinations
+4. set target as internet gateway.
+
+what is a route table?
+
+set of rules that will determine the flow of traffic from the subnet.
 
 ![Screenshot 2022-10-03 2210131 4](https://user-images.githubusercontent.com/77698851/193720961-5593642b-23e7-4146-bbff-eb963df1a675.png)
 ![Screenshot 2022-10-03 2222111 4](https://user-images.githubusercontent.com/77698851/193720978-d4e3d897-b5e1-4fcf-92bd-4e9e0638f172.png)
 ![Screenshot 2022-10-03 2223141 4](https://user-images.githubusercontent.com/77698851/193720992-b0ce4e59-1c4d-46f0-9ee5-0ec982b792dd.png)
+
+part 1.5
+Create a security group
+
+how to?
+
+1.click on security groups on the left hand corner scroll bar.
+2.click create security group button on top right.
+3.navigate to inbound rules and click on add rule
+4.click on SSH(port 22), choose my ip to refer to your computer, which should autofill your IP in ther next column.
+5.add rule, SSH, 130.108.0.0/24, so wright state can connect with ip addresses starting with 130.108
+6.add rule, SSh, addresses starting with 130.108, which what was our previous VPC we had built to allow all Instances within the VPC.
+
+what is a security group?
+
+Similar to firewall rules, allows for security and manages traffic and who comes in and out of the network via inbound rules and outbound.
+
+**note screenshot does not include added VPC, to attach VPC, click on VPC and attach VPC you want associated.
+![Screenshot 2022-10-03 2240131 5](https://user-images.githubusercontent.com/77698851/193723114-de93da8f-151f-4367-bb24-c70d1ed45f3b.png)
+
 
 
