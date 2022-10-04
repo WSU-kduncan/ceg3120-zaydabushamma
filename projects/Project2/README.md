@@ -134,6 +134,10 @@ How to-
 
 5. click allocate
 
+what is an Elastic IP?
+
+An Elastic IP address is a reserved public IP address that you can assign to any EC2 instance in a particular region, until you choose to release it.
+
 Associate instance to Elastic ip
 
 How to-
