@@ -60,6 +60,9 @@ Create a security group
 
 how to?
 
+
+
+
 1.click on security groups on the left hand corner scroll bar.
 2.click create security group button on top right.
 3.navigate to inbound rules and click on add rule
@@ -71,8 +74,9 @@ what is a security group?
 
 Similar to firewall rules, allows for security and manages traffic and who comes in and out of the network via inbound rules and outbound.
 
-**note screenshot does not include added VPC, to attach VPC, click on VPC and attach VPC you want associated.
+
 ![Screenshot 2022-10-03 2240131 5](https://user-images.githubusercontent.com/77698851/193723114-de93da8f-151f-4367-bb24-c70d1ed45f3b.png)
+
 
 
 
