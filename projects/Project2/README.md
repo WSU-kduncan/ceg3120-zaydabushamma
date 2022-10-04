@@ -30,7 +30,19 @@ create an internet gateway
 
 how to- currently on VPC, navigate to left scroll bar and into internet gateways, create one, and on the top right click attack to a VPC.
 
+what is an internet gateway?
 
+A node connects many connections for communicating, also deals with outbound traffic, primarily takes affect when a connection sits between two 
+different netowrks.
 
 ![Screenshot 2022-10-03 2156081 3](https://user-images.githubusercontent.com/77698851/193717966-863dd728-e888-4883-9067-2e060430ddb9.png)
+
+part 1.4
+
+Create a route table
+
+![Screenshot 2022-10-03 2210131 4](https://user-images.githubusercontent.com/77698851/193720961-5593642b-23e7-4146-bbff-eb963df1a675.png)
+![Screenshot 2022-10-03 2222111 4](https://user-images.githubusercontent.com/77698851/193720978-d4e3d897-b5e1-4fcf-92bd-4e9e0638f172.png)
+![Screenshot 2022-10-03 2223141 4](https://user-images.githubusercontent.com/77698851/193720992-b0ce4e59-1c4d-46f0-9ee5-0ec982b792dd.png)
+
 
