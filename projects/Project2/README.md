@@ -1,6 +1,6 @@
 Part 1.1
 
-Create A VPC.
+`Create A VPC`.
 
 how to-
 To create VPC, search VPC in search box and click create VPC, made sure to apply a 24-bit subnet, add name in key if not already set.
@@ -14,7 +14,7 @@ resembles a traditional network.
 
 part 1.2.
 
-creating a subnet
+`creating a subnet`
 
 how to-
 navigate to subnets only from the VPC page on the left scroll down bar. click create subnet and choose VPC that you desire Subnet to be apart of.
@@ -26,7 +26,7 @@ A subnet is a range of available IP addresses in your VPC. Can also organize IP'
 
 part 1.3
 
-create an internet gateway
+`reate an internet gateway`
 
 how to- currently on VPC, navigate to left scroll bar and into internet gateways, create one, and on the top right click attack to a VPC.
 
@@ -39,14 +39,14 @@ different netowrks.
 
 part 1.4
 
-Create a route table
+`Create a route table`
  how to - 
  
 1.click on route tables on the left scroll bar,choose create route table. choose associated VPC. 
 
 2. next, click on tabkle, and on the subnet associatio, explicit subnet asocciations, then choose the subnet that was previously attached to your VPC.
  
-3. Last, click on the route tab on your route table and click edit routes, set destination as 0.0.0.0/0 to send traffic to all destinations
+3. Last, click on the route tab on your route table and click edit routes, set destination as `0.0.0.0/0` to send traffic to all destinations
 
 4. set target as internet gateway.
 
@@ -59,7 +59,7 @@ set of rules that will determine the flow of traffic from the subnet.
 ![Screenshot 2022-10-03 2223141 4](https://user-images.githubusercontent.com/77698851/193720992-b0ce4e59-1c4d-46f0-9ee5-0ec982b792dd.png)
 
 part 1.5
-Create a security group
+`Create a security group`
 
 how to?
 
@@ -74,9 +74,9 @@ how to?
 
 4.click on SSH(port 22), choose my ip to refer to your computer, which should autofill your IP in ther next column.
 
-5.add rule, SSH, `130.108.0.0/24`, so wright state can connect with ip addresses starting with 130.108
+5.add rule, SSH, `130.108.0.0/24`, so wright state can connect with ip addresses starting with `130.108`
 
-6.add rule, SSh, addresses starting with 130.108, which what was our previous VPC we had built to allow all Instances within the VPC.
+6.add rule, SSh, addresses starting with `130.108`, which what was our previous VPC we had built to allow all Instances within the VPC.
 
 what is a security group?
 
@@ -101,15 +101,15 @@ How to-
 
 2.Click running instances, then launch instance
 
-3.Name instance abushamma-instance
+3.Name instance `abushamma-instance`
 
-4.selected an ami, I chose ami-0149b2da6ceec4bb0
+4.selected an ami, I chose `ami-0149b2da6ceec4bb0`
 
-5.instance type was t2.micro
+5.instance type was `t2.micro`
 
 6.go into network settings and attach your VPC
 
-7. kept the volume the at default which was 30gb for me.
+7. kept the volume the at default which was 30gb for me, can add additional volume later on.
 
 8. associate your security group abushamma.sg to the instance near where you attached the VPC(shown in picture)
 
@@ -120,7 +120,7 @@ How to-
 ![Screenshot 2022-10-03 23075722 1](https://user-images.githubusercontent.com/77698851/193727813-530ecfa7-2f07-4f57-88b1-63c87412067b.png)
 
 
-Creating an elastic IP
+`Creating an elastic IP`
 
 How to-
 
@@ -157,7 +157,7 @@ for more security, Allowing all of wright state to access my VPC might not be th
 
 
 
-Used command  sudo hostnamectl set-hostname Abushamma.AMI
+Used command  `sudo hostnamectl set-hostname Abushamma.AMI`
 required to logout for changes to take affect.
 
 ![Screenshot 2022-10-04 002644_final](https://user-images.githubusercontent.com/77698851/193734274-cc592ec9-e8bf-4e2d-884a-26f49cd11269.png)
