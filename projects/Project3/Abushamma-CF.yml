@@ -95,7 +95,7 @@ Resources:
           FromPort: '22'
           ToPort: '22'
           CidrIp: 10.0.0.0/24
-  PublicUbuntuInstance:
+ PublicUbuntuInstance:
     Type: 'AWS::EC2::Instance'
     DependsOn: AttachGateway
     Properties:
@@ -112,7 +112,7 @@ Resources:
         - Key: Application
           Value: !Ref 'AWS::StackId'
         - Key: Name
-          Value: Abushamma-CF-VPC
+          Value: Abushamma-CF-instance
       NetworkInterfaces:
         - GroupSet:
             - !Ref Lab1SecurityGroup
@@ -120,7 +120,7 @@ Resources:
           DeviceIndex: '0'
           DeleteOnTermination: 'true'
           SubnetId: !Ref Subnet
-          PrivateIpAddress: 10.0.0.25
+          PrivateIpAddress: 10.0.0.14
       UserData:
         Fn::Base64:
           !Sub |
@@ -131,4 +131,8 @@ Resources:
               htop \
               sl && \
             echo "This is from the CF template" > /home/ubuntu/hello.txt && \
+            hostnamectl set-hostname Abushamma-CF && \
+            apt-get install -y git && \
+            apt-get install -y python3 && \
+            apt install -y python3-pip && \
             reboot
