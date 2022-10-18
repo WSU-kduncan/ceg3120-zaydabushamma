@@ -1,6 +1,6 @@
 AWSTemplateFormatVersion: 2010-09-09
 Description: >-
-  Abushamma CF Template to create a VPC, allow SSH access from trusted networks, and create a single instance with an Elastic IP address.
+  Zayd CF Template to create a VPC, allow SSH access from trusted networks, and create a single instance with an Elastic IP address.
 Parameters:
   KeyName:
     Description: Name of an existing EC2 KeyPair to enable SSH access to the instance
@@ -31,7 +31,7 @@ Resources:
       Tags:
         - Key: Application
           Value: !Ref 'AWS::StackId'
-        - Key: Name
+        - Key: ami-08c40ec9ead489470
           Value: CEG2350 VPC
   Subnet:
     Type: 'AWS::EC2::Subnet'
