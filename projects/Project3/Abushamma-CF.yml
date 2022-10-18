@@ -39,8 +39,8 @@ Resources:
       VpcId: !Ref VPC
       CidrBlock: 10.0.0.0/28
       Tags:
-        - Key: Application
-          Value: !Ref 'AWS::StackId'
+        - Key: Name
+          Value: Abushamma-CF-VPC
   InternetGateway:
     Type: 'AWS::EC2::InternetGateway'
     Properties:
@@ -116,7 +116,7 @@ Resources:
         - Key: Application
           Value: !Ref 'AWS::StackId'
         - Key: Name
-          Value: CEG2350 Ubuntu
+          Value: Abushamma-CF-VPC
       NetworkInterfaces:
         - GroupSet:
             - !Ref Lab1SecurityGroup
