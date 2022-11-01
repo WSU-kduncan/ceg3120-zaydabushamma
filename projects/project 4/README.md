@@ -26,7 +26,8 @@
  
  ## PART 2.2
  
- ``` Once the config file has been created you are able to use the ssh command followed by eather the adress of the proxy, webserver 1,
+ ```
+ Once the config file has been created you are able to use the ssh command followed by eather the adress of the proxy, webserver 1,
  and webserver 2.
  ```
  ## PART 2.3
