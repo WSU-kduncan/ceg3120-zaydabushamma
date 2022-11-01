@@ -9,9 +9,9 @@
  - user ubuntu
  - port #
  - Identity file- this file is the file that has your pem key, such as ceg3120-key.pem 
+ ```
  
- 
- dd
+ zz
  
 
 
