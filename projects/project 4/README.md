@@ -19,10 +19,41 @@
  - identity file
  - with the same contents you will also duplicate but with the proxy hostname instead
  ```
- - server 2 config filw contains:
+ - server 2 config file contains:
  ```
  - same contents as server one but with server ones hostname instead.
  ```
+ 
+ ## PART 2.2
+ 
+ ``` Once the config file has been created you are able to use the ssh command followed by eather the adress of the proxy, webserver 1,
+ and webserver 2.
+ ```
+ ## PART 2.3
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
  
 
 
