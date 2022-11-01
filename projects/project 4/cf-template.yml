@@ -174,14 +174,14 @@ Resources:
           DeviceIndex: '0'
           DeleteOnTermination: 'true'
           SubnetId: !Ref PublicSubnet
-          PrivateIpAddress: 10.0.0.10 # EC Private ip between 0 and 15
+          PrivateIpAddress: 10.0.0.8 # EC Private ip between 0 and 15
       UserData:
         Fn::Base64:
           !Sub |
             #!/bin/bash -xe
             apt-get update && \
-            apt-get install -y git apache2 && \
-            hostnamectl set-hostname  WebServ1 && \
+            apt-get install -y git python3 python3-pip haproxy && \
+            hostnamectl set-hostname proxy && \
             reboot
   WebServ1Instance:
     Type: 'AWS::EC2::Instance'
@@ -208,7 +208,43 @@ Resources:
           DeviceIndex: '0'
           DeleteOnTermination: 'true'
           SubnetId: !Ref PrivateSubnet
-          PrivateIpAddress: 10.0.1.10 # TODO make sure unique to the instance
+          PrivateIpAddress: 10.0.1.8 # TODO make sure unique to the instance
+      UserData:
+        Fn::Base64:
+          !Sub |
+            #!/bin/bash -xe
+            apt-get update && \
+            apt-get install -y git apache2 && \
+            #set server hostname
+            hostnamectl set-hostname WebServ1  && \
+            reboot
+# TODO: create another webserver instance attached to the private subnet
+WebServ2Instance:
+    Type: 'AWS::EC2::Instance'
+    DependsOn: NATGateway
+    Properties:
+      ImageId: !FindInMap 
+        - AWSRegionUbuntu
+        - !Ref 'AWS::Region'
+        - !FindInMap 
+          - AWSInstanceType2Arch
+          - t2.micro
+          - Arch
+      InstanceType: t2.micro
+      KeyName: !Ref KeyName
+      Tags:
+        - Key: Application
+          Value: !Ref 'AWS::StackId'
+        - Key: Name
+          Value: webserv2
+      NetworkInterfaces:
+        - GroupSet:
+            - !Ref SecurityGroup
+          AssociatePublicIpAddress: 'false'
+          DeviceIndex: '0'
+          DeleteOnTermination: 'true'
+          SubnetId: !Ref PrivateSubnet
+          PrivateIpAddress: 10.0.1.4 # TODO make sure unique to the instance
       UserData:
         Fn::Base64:
           !Sub |
@@ -218,4 +254,3 @@ Resources:
             #set server hostname
             hostnamectl set-hostname WebServ2  && \
             reboot
-# TODO: create another webserver instance attached to the private subnet
