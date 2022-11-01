@@ -208,7 +208,7 @@ Resources:
           DeviceIndex: '0'
           DeleteOnTermination: 'true'
           SubnetId: !Ref PrivateSubnet
-          PrivateIpAddress: 10.0.1.8 # TODO make sure unique to the instance
+          PrivateIpAddress: 10.0.1.13 # TODO make sure unique to the instance
       UserData:
         Fn::Base64:
           !Sub |
@@ -244,7 +244,7 @@ WebServ2Instance:
           DeviceIndex: '0'
           DeleteOnTermination: 'true'
           SubnetId: !Ref PrivateSubnet
-          PrivateIpAddress: 10.0.1.4 # TODO make sure unique to the instance
+          PrivateIpAddress: 10.0.1.5 # TODO make sure unique to the instance
       UserData:
         Fn::Base64:
           !Sub |
