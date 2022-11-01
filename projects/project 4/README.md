@@ -19,9 +19,9 @@
  - identity file
  - with the same contents you will also duplicate but with the proxy hostname instead
  ```
- -server 2 config filw contains:
+ - server 2 config filw contains:
  ```
- -same contents as server one but with server ones hostname instead.
+ - same contents as server one but with server ones hostname instead.
  ```
  
 
