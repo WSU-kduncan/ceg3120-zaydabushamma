@@ -32,6 +32,13 @@
  ```
  ## PART 2.3
  
+ - setting up HAProxy load balancer:
+ ```
+ The HAProxy configuration file located in /etc/haproxy/ needs to be modified with the command `sudo vim /etc/haproxy/haproxy.cfg` 
+ ```
+ - what configurations were set?
+ ```
+ 
  
  
  
